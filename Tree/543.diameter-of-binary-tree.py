@@ -34,3 +34,11 @@ class Solution(object):
         self.max_len = 0
         self.dfs(root)
         return self.max_len
+
+root = TreeNode(1)
+root.left = TreeNode(3)
+root.right = TreeNode(4)
+#root.left.left = BinaryTreeNode(3)
+#root.left.right = BinaryTreeNode(4)
+sol = Solution()
+print(sol.diameterOfBinaryTree(root))      
