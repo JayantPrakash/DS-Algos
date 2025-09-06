@@ -16,7 +16,8 @@ class Solution(object):
         for neighbor in adjList[source]:
             if self.visited[neighbor] == -1:
                 self.parent[neighbor] = source
-                self.dfs(neighbor,adjList)
+                if not self.dfs(neighbor,adjList):
+                    return False
             else:
                 if self.parent[source] != neighbor:
                     return False

@@ -29,6 +29,8 @@ class Graph:
 n = 5
 edges = [[0, 1], [1, 2], [0, 2], [2,3],[3, 4]]
 #edges = [[0, 1], [1, 2], [0, 2], [3, 4]]
+n = 7
+edges = [[0, 1], [1, 2], [0, 2], [2,3],[3, 4],[5,6]]
 source = 0
 g = Graph()
 adjList = g.createAdjacencyList(n, edges)
